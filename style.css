@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #FFE6EE;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+header h1 {
+    display: inline-block; 
+    background-color: black;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    color: #ff9900;
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5em;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 1em 0 0.1em;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 1em;
+}
+
+section h2 {
+    text-align: center;
+    animation: slideIn 6s ease-out;
+    display: inline-block; 
+    background-color: #ff9900; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+img.selected {
+    border-radius: 50%;
+    width: 300px;
+    height: 200px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+table tr:nth-child(odd) {
+    background-color: #ddd; 
+}
+
+table th {
+    background-color: #333; 
+    color: white;
+    padding: 0.5em;
+    text-align: left;
+}
+
+table td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
